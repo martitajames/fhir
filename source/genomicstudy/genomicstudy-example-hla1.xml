@@ -26,7 +26,7 @@
         </coding>
     </type>
     <subject>
-        <reference value="Patient/denovoChild"/>
+        <reference value="Patient/hlaPatientRecipient"/>
     </subject>
     <encounter>
         <reference value="Encounter/denovoEncounter"/>
@@ -56,7 +56,7 @@
         </concept>
     </reason>
     <note>
-        <text value="This is a case of congenital cystic kidney disease that resulted in end-stage kidney disease."/>
+        <text value="This is a case of congenital cystic kidney disease that resulted in end-stage kidney condition."/>
     </note>
     <description value="De novo mutation study of the patient."/>
     <analysis>  <!-- 0..* Genomic Analysis Event of proband -->
@@ -69,7 +69,7 @@
         <instantiatesUri value="https://pubmed.ncbi.nlm.nih.gov/33927380/"/>
         <title value="Proband Sequence Variation Detection Using Next Generation Sequencing"/>
         <subject>
-            <reference value="Patient/denovoChild"/>
+            <reference value="Patient/hlaPatientRecipient"/>
         </subject>
         <specimen>
             <reference value="Specimen/denovo-1"/>
