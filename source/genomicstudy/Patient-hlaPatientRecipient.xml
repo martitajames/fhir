@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Patient xmlns="http://hl7.org/fhir">
-  <id value="denovoChild"/>
+  <id value="hlaPatientRecipient"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Child Junior Doe (OFFICIAL)</b> (no stated gender) 2021-01-01 ( Medical record number: 11111 (TEMP))</p></div>
   </text>
