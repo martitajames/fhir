@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+
+<!--
+These elements SHALL always appear in this order. These basic elements shared by all resources come first
+in order to support consistent definitions for schema and UML derived code.
+-->
+
+[%settitle Biologically Derived Products Module%]
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+[%file newheader%]
+</head>
+<body>
+[%file newnavbar%]
+
+
+<table class="colsi"><tr><td id="wg">Work Group <a _target="blank" href="[%wg phx%]">[%wgt ord%]</a> </a> </td><td id="ballot"><a href="versions.html#std-process">Standards Status</a>:<!--!ns!--><a href="versions.html#std-process">Informative</a></td></tr></table>
+
+<a name="root"></a>
+<h2>Biologically Derived Products Module</h2>
+
+<a name="intro"></a>
+<h3>Introduction</h3>
+<p>
+	This module outlines the resources and functionality used to model biologically derived products (BDP) that have specific requirements for traceability and allocation. The Biologically Derived Product is used to track biological products of human or non-human origin intended to be transplanted or infused into a human. Examples of products of human origin (referred to as Medical Products of Human Origin, or MPHO) include: blood for transfusion; blood and marrow for cellular therapy; organs, cornea, vascular tissue, bone, tendons, and other tissues for transplantation; banked human milk; and, serum eye drops. Examples of non-human derived products include porcine dermis and porcine heart valves. In most countries BDP are regulated separately from medicines and medical devices and have specific traceability requirements including the need to be able to trace back to the donor, and the need to retain traceability records for very long periods (e.g., 30 years from time of use for tissues and cells clinically applied in the EU).
+</p>
+<p>
+	Some BDP are regulated as medical devices in some jurisdictions and these may need to be managed through the Medical Devices module in FHIR. Traceability and lookback functionality will need to take into account that material from a single donation event may result in products that are managed as both biologics and medical devices. Care will need to be taken when products cross international boundaries as the regulatory framework may change, thus a product regulated as a medical device in the US may be regulated as Tissues and Cells in the EU.
+</p>
+<p>
+	For further information on the boundary between BDP and Specimen see <a href="biologicallyderivedproduct.html#8.26.2">Biologically Derived Products</a>
+</p>
+<p>
+	Important Note: For BDP derived from a human donor traceability between donor and recipient has to be maintained. Models described in this module support traceability. If alternative models are used care must be taken to ensure the traceability pathway is maintained.
+</p>
+    <a name="index"></a>
+    <h3>Index</h3>
+    <table width="100%" style="table-layout: fixed">
+        <tr>
+            <td>
+                <ul>
+                	<li><a href="biologicallyderivedproduct.html">BiologicallyDerivedProduct</a></li>
+                	<li><a href="biologicallyderivedproductdispense.html">BiologicallyDerivedProductDispense</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+
+
+<a name="meds"></a>
+<h4>Biologically Derived Products</h4>
+<table class="bare">
+    <tr><td><b>Name</b></td><td><b>Description</b></td></tr>
+	<tr bgcolor="#EFEFEF">
+		<td valign="top"><a href="biologicallyderivedproduct.html">BiologicallyDerivedProduct</a></td>
+		<td>
+			<p>Add text here</p>
+			<p>Add text here</p>
+
+		</td>
+	</tr>
+	<tr bgcolor="#EFEFEF">
+		<td><a href="biologicallyderivedproductdispense.html">BiologicallyDerivedProductDispense</a></td>
+		<td>Add text here</td></tr>
+</tr>
+</table>
+
+
+<a name="uses"></a>
+<h3>Common Use Cases</h3>
+<ul>
+	<li>General Usage
+	</li>
+	<li>Cellular Therapy
+	</li>
+	<li>Cornea Transplant
+	</li>
+	<li>Blood Transfusion
+	</li>
+</ul>
+
+
+<h3>Other resources</h3>
+	There are other resources that are of particular interest in the medication domain.
+	<ul>
+		<li> <a href="supplyrequest.html">SupplyRequest</a> and <a href="supplydelivery.html">SupplyDelivery</a> which,
+		like MedicationRequest, are 'detail' resources used as part of a <a href="workflow-module.html">workflow</a>. They are concerned with
+			the request of supplies used in the healthcare process. This includes supplies specifically used in the
+			treatment of patients as well as supply movement within an institution
+			(transport a set of supplies from materials management to a service unit (nurse station).</li>
+    <li>This specification also includes a draft set of resources that are used for registration of medications for regulatory purposes:
+    <ul style="-moz-column-count: 3; -moz-column-gap: 20px;  -webkit-column-count: 3;  -webkit-column-gap: 20px;  column-count: 3;  column-gap: 20px;">
+    	<li><a title="[%resdesc MedicinalProductDefinition%]" href="medicinalproductdefinition.html">Observation</a></li>
+    	<li><a title="[%resdesc PackagedProductDefinition%]" href="packagedproductdefinition.html">Specimen</a></li>
+    	<li><a title="[%resdesc AdministrableProductDefinition%]" href="administrableproductdefinition.html">Procedure</a></li>
+    	<li><a title="[%resdesc RegulatedAuthorization%]" href="regulatedauthorization.html">ServiceRequest</a></li>
+    	<li><a title="[%resdesc RegulatedAuthorization%]" href="regulatedauthorization.html">SupplyDelivery</a></li>
+    </ul>
+      These resources are under development in association with several medication regulation authorities.</li>
+	</ul>
+
+<a name="secpriv"></a>
+<h3>Security and Privacy</h3>
+<p>
+	Need to add
+</p>
+
+<p>For more general considerations, see <a href="secpriv-module.html">the Security and Privacy module</a>.</p>
+
+
+<a name="roadmap"></a>
+<h3>Developmental Roadmap</h3>
+<p>
+	The OO workgroup has plans to improve all Biologically Derived Product resources - Add plans for testing and/or advancing the resources for R6.
+</p>
+
+[%file newfooter%]
+</body>
+</html>
